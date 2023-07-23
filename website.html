@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Prathamesh Zingade
+        </title>
+        <link rel="stylesheet" href="styles/generics.css">
+        <link rel="stylesheet" href="styles/body.css">
+        
+        <style>
+            .main-div{
+                display: flex; 
+                height: auto;
+                flex-direction: column;
+            }
+            .header-div{
+                /* background-color: lightblue; */
+                height: 56px;
+                position: fixed;
+
+                top: 0;
+                left: 0;
+                right: 0;
+
+                background-color: whitesmoke;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .right-header{
+                /* background-color: lawngreen; */
+                width: 200px;
+                display: flex; 
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .left-header{
+                margin: 0px 10px;
+            }
+            .intro-text{
+                font-size: 28px;
+            }
+            .insta{
+                height: 25px;
+            }
+            .linked-in{
+                height: 40px;
+            }
+
+            .about-row-div{
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .my-image{
+                height: 180px;
+                margin-left: 25px;
+                margin-right: 8px;
+                width: 180px;
+                object-fit: contain;
+                border-radius: 5px;
+            }
+            .about-text{
+                flex: 1;
+                font-size: 16px;
+                margin-left: 8px;
+                margin-right: 10px;
+                line-height: 24px;
+                text-align: justify;
+            }
+
+            .achievement-row-div{
+                background-color: whitesmoke;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .skills-div{
+                flex-direction: column;
+                display: flex;
+                flex: 1;
+                background-color: #ede7e7;
+            }
+            .scroll-menu{
+                display: flex;
+                align-items: center;
+                overflow: auto;
+                white-space: nowrap;
+            }
+            .scroll-element{
+                padding: 8px;
+                display: flex;
+                height: 150px;
+                width: 270px;
+                margin: 8px;
+                border-radius: 5px;
+                box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.09);
+                background-color: rgb(50, 50, 50);
+                flex-direction: column;
+            }
+            .name{
+                font-weight: bold;
+                font-size: 36px;
+                color: rgb(223, 223, 223);
+            }
+            .description{
+                font-size: 12px;
+                line-height: 21px;
+                color: rgb(236, 236, 236);
+            }
+
+            .skill-text-div{
+                display: flex;
+                justify-content: start;
+            }
+            .project-text-div{
+                display: flex;
+                justify-content: start;
+            }
+            .certificate-text-div{
+                display: flex;
+                justify-content: start;
+            }
+
+            .certificate-text,.project-text,
+            .skill-text{
+                font-size: 20px;
+                margin-top: 5px;
+                margin-right: 10px;
+                font-weight: bold;
+                margin-left: 10px;
+                text-transform: uppercase;
+            }
+
+            .projects-div{
+                flex-direction: column;
+                display: flex;
+                flex: 1;
+                background-color: #ede7e7;
+            }
+
+            .certificates-div{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                background-color: gold;
+            }
+
+            .third-row-div{
+                margin-top: 20px;
+                display: flex;
+                height: 150px;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+            .information-text{
+                color: whitesmoke;
+                font-size: 16px;
+                line-height: 21px;
+                margin: 5px;
+                text-align: center;
+            }
+            .side-bar{
+                background-color: rgb(110, 110, 110);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                position: fixed;
+                top: 60px;
+                bottom: 2px;
+                left: 2px;
+                width: 320px;
+                border-radius: 5px;
+            }
+            .education-div{
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                flex: 1;
+                width: 312px;
+                margin: 4px;
+                
+            }
+            .hobby-div{
+                flex: 1;
+                width: 312px;
+                margin: 4px;
+                background-color: lightcoral;
+            }
+            .side-bar-titles{
+                margin-left: 10px;
+                margin-top: 5px;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            .education-text{
+                margin-left: 10px;
+                color: azure;
+                width: 300px;
+            }
+            .education-content-div{
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: start;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main-div">
+            <div class="header-div"> 
+                <div class="left-header" style="flex: 1;">
+                    <p class="intro-text">
+                        Myself Prathamesh Zingade!
+                    </p>
+                </div>
+                <div class="right-header">
+                    <a class="insta" href="https://www.instagram.com/prathamesh_zingade" target="_blank">
+                        <img class="insta" src="photos/logo-insta.png" alt="Instagram">
+                    </a>
+                    <a class="linked-in" href="https://www.linkedin.com/in/prathamesh-zingade-8716bb210/" target="_blank">
+                        <img class="linked-in" src="photos/logo-linkedin.png" alt="LinkedIn">
+                    </a>                    
+                    <a class="insta" href="https://github.com/ZingadePrathamesh" target="_blank">
+                        <img class="insta" src="photos/logo-github.png" alt="GitHub">
+                    </a>                           
+                </div>
+            </div>
+
+            <div class = "side-bar">
+                <div class="education-div" >
+                    <div style="display: flex; justify-content: start; margin-bottom: 10px;">
+                        <p class="side-bar-titles">Education</p>
+                    </div>
+                    <div class="education-content-div">
+                        <div>
+                            <p class="education-text" style="margin-top: 16px;"><strong>MHT-CET PCB</strong> </p>
+                            <p class="education-text" style="font-size: 12px;">82 Percentile</p>
+                        </div>
+                        <div>
+                            <p class="education-text" style="margin-top: 16px;"><strong>12th Science</strong> </p>
+                            <p class="education-text" style="font-size: 12px;">90%<br>K. J. Somaiya Junior College of Science and Commerce, Vidyavihar</p>
+                        </div>
+                        <div>
+                            <p class="education-text" style="margin-top: 16px;"><strong>10th SSC</strong> </p>
+                            <p class="education-text" style="font-size: 12px;">85.60%<br>Jeevan Jyoti English High School, Thane</p>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="hobby-div">
+
+                </div>
+
+            </div>
+
+            <div class="about-row-div">
+                <img class="my-image" src="photos/my-image.jpg">
+                <p class="about-text">
+                    <strong>I am a passionate C.S.E. graduate specializing in Artificial Intelligence and Machine Learning from Mumbai University.</strong><br>
+                    With a drive to explore cutting-edge technologies, I thrive in the world of Java programming and consider myself a true Java enthusiast.<br>
+                    As a <strong>Content Lead at Ad Astra Club</strong>, I relish curating and crafting engaging content.<br>
+                    Additionally, I serve as the <strong>ZUNO Community Captain</strong>, fostering a vibrant and collaborative environment.<br>
+                    Constantly seeking opportunities to learn and innovate, I aspire to make a significant impact in the realm of AI and ML while empowering others through my knowledge and leadership.
+                </p>      
+            </div>
+            
+            <div class="achievement-row-div">
+                <div class="skills-div">
+                    <div class="skill-text-div">
+                        <p class="skill-text">Skills</p>
+                    </div>
+                    <div class="scroll-menu">
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA</p>
+                                <p class="description">Learnt JAVA core fundamentals from various<br>sources like YouTube, Documentation<br>and Courses.<br>I can read and write in Java fluently.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA OOPs</p>
+                                <p class="description">Profound knowledge in OOPs.<br>Passed LinkedIn test as well.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">JAVA</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+
+                        
+                        
+                      
+                    </div>
+                </div>
+
+                <div class="projects-div">
+                    <div class="project-text-div">
+                        <p class="project-text">PROJECTS</p>
+                    </div>
+
+                    <div class="scroll-menu">
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="certificates-div">
+                    <div class="certificate-text-div">
+                        <p class="certificate-text">CERTificates</p>
+                    </div>
+
+                    <div class="scroll-menu">
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Hackathon</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="scroll-element">
+                                <p class="name">Wisely</p>
+                                <p class="description">Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="third-row-div">
+                <div class="information-text-div">
+                    <p class="information-text">
+                        <strong>More about me!</strong><br>
+                        <strong>College: </strong>Smt. Indira Gandhi College of Engineering,Ghansoli<br>
+                        <strong>Lives in: </strong>Thane, Maharastra, India<br>
+                        <strong>Mail me: </strong>zingadeprathamesh12@gmail.com<br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
